@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>MTN // Digital Headquarters</title>
+<meta name="description" content="The personal command center for Mukovhe Terry Netshivhale — AI, entrepreneurship, and systemic value creation."/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="nav-brand">MTN // <span>LABS</span></a>
+  <div class="nav-links">
+    <a href="lab.html" class="nav-link">LAB</a>
+    <a href="log.html" class="nav-link">LOG</a>
+    <a href="blueprint.html" class="nav-link">BLUEPRINT</a>
+    <a href="contact.html" class="nav-link">CONTACT</a>
+  </div>
+  <button class="mobile-toggle" onclick="toggleMenu()">☰</button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="lab.html">LAB</a>
+  <a href="log.html">LOG</a>
+  <a href="blueprint.html">BLUEPRINT</a>
+  <a href="contact.html">CONTACT</a>
+</div>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-left">
+      <div class="status-bar">
+        <span class="status-tag">STATUS: ACTIVE</span>
+        <span class="status-tag">VERSION: 1.0</span>
+        <span class="status-tag">YEAR: 01</span>
+      </div>
+      <h1 class="hero-name">
+        MUKOVHE TERRY<br>
+        <span class="name-accent">NETSHIVHALE</span>
+      </h1>
+      <p class="hero-tagline">ARCHITECTING SYSTEMS FOR A SCALABLE FUTURE</p>
+      <p class="hero-desc">BSc Computer Science at the University of the Witwatersrand. Currently decoding the intersection of AI, Data Engineering, and Business Value.</p>
+      <div class="hero-ctas">
+        <a href="lab.html" class="btn-primary">EXPLORE THE LAB →</a>
+        <a href="blueprint.html" class="btn-outline">READ THE BLUEPRINT</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="photo-frame">
+        <!-- Replace 'photo.jpg' with your actual image file -->
+        <img src="photo.jpg" alt="Mukovhe Terry Netshivhale" class="hero-photo" onerror="this.parentElement.classList.add('photo-placeholder')"/>
+        <div class="photo-label">WITS UNIVERSITY // 2026</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION -->
+  <section class="mission reveal">
+    <div class="mission-quote">
+      <blockquote>"I am not here to write code. I am here to build systems that solve real-world problems at scale."</blockquote>
+      <cite>MISSION MANDATE // MUKOVHE TERRY NETSHIVHALE</cite>
+    </div>
+  </section>
+
+  <!-- FOCUS AREAS -->
+  <section class="focus reveal">
+    <div class="section-header">
+      <span class="section-label">ACTIVE DEVELOPMENT</span>
+      <span class="section-label orange">3 FOCUS AREAS</span>
+    </div>
+    <div class="focus-grid">
+      <div class="focus-card">
+        <div class="focus-img" style="background:linear-gradient(135deg,#0a1628,#001f7a);">
+          <div class="circuit-bg"></div>
+        </div>
+        <div class="focus-num orange">01</div>
+        <div class="focus-content">
+          <div class="focus-title-row">
+            <h3>AI &amp; SOFTWARE<br>ENGINEERING</h3>
+            <span class="arrow">↗</span>
+          </div>
+          <p>Building foundational mastery in Python, C++, Algorithms, and Scientific Computing. Actively exploring Machine Learning, Data Engineering, and AI-driven systems.</p>
+          <div class="tags">
+            <span class="tag">PYTHON</span>
+            <span class="tag">C++</span>
+            <span class="tag">ALGORITHMS</span>
+            <span class="tag">AI/ML</span>
+          </div>
+        </div>
+      </div>
+      <div class="focus-card">
+        <div class="focus-img" style="background:linear-gradient(135deg,#0d1f3c,#1a3a6b);">
+          <div class="grid-bg"></div>
+        </div>
+        <div class="focus-num orange">02</div>
+        <div class="focus-content">
+          <div class="focus-title-row">
+            <h3>DIGITAL MEDIA<br>&amp; DESIGN</h3>
+            <span class="arrow">↗</span>
+          </div>
+          <p>Collaborating with Quanta Vision on drone photography, videography, and digital content creation. Combining perspective with precision.</p>
+          <div class="tags">
+            <span class="tag">DRONE PHOTOGRAPHY</span>
+            <span class="tag">VIDEO</span>
+            <span class="tag">DIGITAL DESIGN</span>
+          </div>
+        </div>
+      </div>
+      <div class="focus-card">
+        <div class="focus-img" style="background:linear-gradient(135deg,#1a1a2e,#2d2d4a);">
+          <div class="network-bg"></div>
+        </div>
+        <div class="focus-num orange">03</div>
+        <div class="focus-content">
+          <div class="focus-title-row">
+            <h3>EDUCATION &amp;<br>ENTREPRENEURSHIP</h3>
+            <span class="arrow">↗</span>
+          </div>
+          <p>Founded Level7Lab to help students improve academically and personally. Building systems that create scalable educational impact.</p>
+          <div class="tags">
+            <span class="tag">LEVEL7LAB</span>
+            <span class="tag">EDTECH</span>
+            <span class="tag">LEADERSHIP</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK STATS -->
+  <section class="stats reveal">
+    <div class="stat-item">
+      <div class="stat-num">Y<span class="orange">1</span></div>
+      <div class="stat-label">OF THE JOURNEY</div>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <div class="stat-num"><span class="orange">3</span></div>
+      <div class="stat-label">LANGUAGES SPOKEN</div>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <div class="stat-num"><span class="orange">4</span></div>
+      <div class="stat-label">ACTIVE PROJECTS</div>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <div class="stat-num"><span class="orange">∞</span></div>
+      <div class="stat-label">IDEAS IN QUEUE</div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-status">
+      <span class="system-status">SYSTEM STATUS: <span class="online">ONLINE</span></span>
+      <span class="footer-credit">Designed and Engineered by Terry Netshivhale</span>
+    </div>
+    <div class="footer-socials">
+      <a href="https://github.com/terrynets" target="_blank" rel="noopener">GITHUB</a>
+      <a href="https://linkedin.com/in/mukovhe-netshivhale" target="_blank" rel="noopener">LINKEDIN</a>
+      <a href="https://instagram.com/terrynets" target="_blank" rel="noopener">INSTAGRAM</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-nav">
+      <a href="lab.html">Lab</a>
+      <a href="log.html">Log</a>
+      <a href="blueprint.html">Blueprint</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <span class="footer-version">v1.0.0 // 2026</span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

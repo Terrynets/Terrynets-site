@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Contact // MTN Digital Headquarters</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="nav-brand">MTN // <span>LABS</span></a>
+  <div class="nav-links">
+    <a href="lab.html" class="nav-link">LAB</a>
+    <a href="log.html" class="nav-link">LOG</a>
+    <a href="blueprint.html" class="nav-link">BLUEPRINT</a>
+    <a href="contact.html" class="nav-link active">CONTACT</a>
+  </div>
+  <button class="mobile-toggle" onclick="toggleMenu()">☰</button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="lab.html">LAB</a>
+  <a href="log.html">LOG</a>
+  <a href="blueprint.html">BLUEPRINT</a>
+  <a href="contact.html">CONTACT</a>
+</div>
+
+<main class="page-main">
+  <div class="page-header reveal">
+    <p class="page-eyebrow">// OPEN CHANNEL</p>
+    <h1 class="page-title">LET'S CONNECT</h1>
+    <p class="page-sub">Open to internships, collaborations, scholarships, and anyone working on problems worth solving. Every message gets a response.</p>
+  </div>
+
+  <section class="contact-section reveal">
+    <div class="contact-grid">
+
+      <!-- CONTACT FORM -->
+      <div class="contact-form-wrap">
+        <p class="form-note">Fill in your message below. Clicking send will open your email app with everything pre-filled — including the subject <strong>"Let's Connect"</strong>.</p>
+        <div class="form-group">
+          <label class="form-label">YOUR NAME</label>
+          <input type="text" id="senderName" class="form-input" placeholder="Your full name"/>
+        </div>
+        <div class="form-group">
+          <label class="form-label">YOUR EMAIL</label>
+          <input type="email" id="senderEmail" class="form-input" placeholder="your@email.com"/>
+        </div>
+        <div class="form-group">
+          <label class="form-label">REASON FOR REACHING OUT</label>
+          <select id="reason" class="form-input form-select">
+            <option value="">Select a reason</option>
+            <option value="Internship Opportunity">Internship Opportunity</option>
+            <option value="Collaboration">Collaboration</option>
+            <option value="Scholarship / Grant">Scholarship / Grant</option>
+            <option value="Mentorship">Mentorship</option>
+            <option value="General Enquiry">General Enquiry</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">YOUR MESSAGE</label>
+          <textarea id="message" class="form-input form-textarea" rows="5" placeholder="Write your message here..."></textarea>
+        </div>
+        <button class="btn-primary send-btn" onclick="sendEmail()">SEND MESSAGE →</button>
+        <p class="form-disclaimer">This opens your default email app (Gmail, Outlook, etc.) with the message pre-filled and addressed to terrynets.m@gmail.com.</p>
+      </div>
+
+      <!-- DIRECT LINKS -->
+      <div class="contact-links-wrap">
+        <div class="contact-links">
+          <a href="mailto:terrynets.m@gmail.com?subject=Let%27s%20Connect" class="contact-link-item">
+            <div>
+              <div class="cl-label">EMAIL</div>
+              <div class="cl-value">terrynets.m@gmail.com</div>
+            </div>
+            <span class="cl-arrow">↗</span>
+          </a>
+          <a href="https://linkedin.com/in/mukovhe-netshivhale" target="_blank" rel="noopener" class="contact-link-item">
+            <div>
+              <div class="cl-label">LINKEDIN</div>
+              <div class="cl-value">Mukovhe Netshivhale</div>
+            </div>
+            <span class="cl-arrow">↗</span>
+          </a>
+          <a href="https://github.com/terrynets" target="_blank" rel="noopener" class="contact-link-item">
+            <div>
+              <div class="cl-label">GITHUB</div>
+              <div class="cl-value">@terrynets</div>
+            </div>
+            <span class="cl-arrow">↗</span>
+          </a>
+          <a href="https://instagram.com/terrynets" target="_blank" rel="noopener" class="contact-link-item">
+            <div>
+              <div class="cl-label">INSTAGRAM</div>
+              <div class="cl-value">@terrynets</div>
+            </div>
+            <span class="cl-arrow">↗</span>
+          </a>
+          <a href="https://tiktok.com/@level7lab" target="_blank" rel="noopener" class="contact-link-item">
+            <div>
+              <div class="cl-label">LEVEL7LAB // TIKTOK</div>
+              <div class="cl-value">@level7lab</div>
+            </div>
+            <span class="cl-arrow">↗</span>
+          </a>
+        </div>
+
+        <div class="availability-card">
+          <div class="av-label">CURRENT AVAILABILITY</div>
+          <div class="av-status"><span class="online">●</span> Open to internships from Dec 2025</div>
+          <div class="av-status"><span class="online">●</span> Available for collaborations now</div>
+          <div class="av-status"><span class="online">●</span> Accepting mentorship conversations</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-status">
+      <span class="system-status">SYSTEM STATUS: <span class="online">ONLINE</span></span>
+      <span class="footer-credit">Designed and Engineered by Terry Netshivhale</span>
+    </div>
+    <div class="footer-socials">
+      <a href="https://github.com/terrynets" target="_blank" rel="noopener">GITHUB</a>
+      <a href="https://linkedin.com/in/mukovhe-netshivhale" target="_blank" rel="noopener">LINKEDIN</a>
+      <a href="https://instagram.com/terrynets" target="_blank" rel="noopener">INSTAGRAM</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-nav">
+      <a href="lab.html">Lab</a>
+      <a href="log.html">Log</a>
+      <a href="blueprint.html">Blueprint</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <span class="footer-version">v1.0.0 // 2026</span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script>
+function sendEmail() {
+  const name = document.getElementById('senderName').value.trim();
+  const email = document.getElementById('senderEmail').value.trim();
+  const reason = document.getElementById('reason').value;
+  const msg = document.getElementById('message').value.trim();
+
+  if (!msg) {
+    alert('Please write a message before sending.');
+    return;
+  }
+
+  const subject = encodeURIComponent("Let's Connect");
+  const body = encodeURIComponent(
+    `Hi Terry,\n\n` +
+    (reason ? `Reason for reaching out: ${reason}\n\n` : '') +
+    `${msg}\n\n` +
+    (name ? `— ${name}` : '') +
+    (email ? `\n${email}` : '')
+  );
+
+  window.location.href = `mailto:terrynets.m@gmail.com?subject=${subject}&body=${body}`;
+}
+</script>
+</body>
+</html>
